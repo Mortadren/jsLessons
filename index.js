@@ -96,10 +96,3 @@ const postsById = async(id) => {
 postsById(2)
 
 
-const hello = () => {
-  while (true) {
-    console.log("Пошли пить пиво");
-  }
-}
-
-hello()
