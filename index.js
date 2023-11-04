@@ -11,7 +11,7 @@ const getType = (arg) => {
     }
     
 }
-console.log(getType(55))
+// console.log(getType(55))
 //////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////ZADACHA//////////////////////////////////
@@ -22,7 +22,7 @@ const filterStrings = (arr) => {
     return arr.filter((element) => typeof element === 'string')
     
 }
-console.log(filterStrings([1, 'text', true, 'bimbambombom', null, undefined]))
+// console.log(filterStrings([1, 'text', true, 'bimbambombom', null, undefined]))
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -34,7 +34,7 @@ console.log(filterStrings([1, 'text', true, 'bimbambombom', null, undefined]))
 //////////////////////////////////////////////////////////////////////////////
 
 const fizzbuzz = (n) => {
-     for (let i=0; i<=n; i++){
+     for (let i=1; i<=n; i++){
         if (i % 3 === 0 && i % 5 === 0){
             console.log('FizzBuzz')
         }else if ( i % 3 === 0){
@@ -45,4 +45,42 @@ const fizzbuzz = (n) => {
         
 
     }}
-fizzbuzz(15)
+// fizzbuzz(15)
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////ZADACHA//////////////////////////////////
+////написать функцию, которая принимает количество пользователей для генерации 
+////и возвращает массив объектов. Каждый объект должен предствлять пользователя
+////и содержать поля names, surnames, ages, cities, genders, favouriteFoods
+//////////////////////////////////////////////////////////////////////////////
+
+
+const names = ['Alice', 'Bob', 'Charlie', 'Diana', 'Edward'];
+const surnames = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones'];
+const ages = [25, 30, 35, 40, 45];
+const cities = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'];
+const genders = ['male', 'female'];
+const favoriteFoods = ['Pizza', 'Burger', 'Sushi', 'Pasta', 'Salad'];
+
+
+
+const generateUsers = (arg)=>{
+    for (i=1; i <= arg; i++){
+        const a = {}
+        console.log(a);
+        
+    }
+}
+generateUsers(3)
+// const users = generateUsers(3);
+// console.log(users);
+/*
+[
+  { id: 0, name: 'Charlie', age: 30, city: 'Houston' },
+  { id: 1, name: 'Bob', age: 45, city: 'New York' },
+  { id: 2, name: 'Alice', age: 35, city: 'Chicago' },
+]
+*/
