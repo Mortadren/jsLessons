@@ -1,9 +1,17 @@
 /////////////////////////////////////ZADACHA//////////////////////////////////
 ////!!!типы данных и функции!!! (ф-я принимает аргумент и возвращает его тип)////
 const getType = (arg) => {
-    return typeof arg
+    // return Array.isArray(arg)
+    if (arg === null){
+        return null
+    } else if (Array.isArray(arg)){
+        return 'massive'
+    }else {
+        return typeof(arg)
+    }
+    
 }
-console.log(getType(null))
+console.log(getType(55))
 //////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////ZADACHA//////////////////////////////////
@@ -11,6 +19,7 @@ console.log(getType(null))
 ////массив, содержащий только строки из исходного массива)////////////////////
 
 const filterStrings = (arr) => {
+    return arr.filter((element) => typeof element === 'string')
     
 }
 console.log(filterStrings([1, 'text', true, 'bimbambombom']))
