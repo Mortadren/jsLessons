@@ -86,13 +86,6 @@ const generateUsers = (arg)=>{
     }
     return users
 }
-console.log(generateUsers(100));
-// const users = generateUsers(3);
-// console.log(users);
-/*
-[
-  { id: 0, name: 'Charlie', age: 30, city: 'Houston' },
-  { id: 1, name: 'Bob', age: 45, city: 'New York' },
-  { id: 2, name: 'Alice', age: 35, city: 'Chicago' },
-]
-*/
+// console.log(generateUsers(1));
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
