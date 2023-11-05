@@ -68,13 +68,25 @@ const favoriteFoods = ['Pizza', 'Burger', 'Sushi', 'Pasta', 'Salad'];
 
 
 const generateUsers = (arg)=>{
+    const users = []
+    const randomFrom = (massive) => {
+        return massive[Math.round(Math.random() * (massive.length - 1))]                                                    //максимальный индекс из массива
+    } 
     for (i=1; i <= arg; i++){
-        const a = {}
-        console.log(a);
-        
+        const user = {
+            id:i,
+            name:randomFrom(names),
+            surname:randomFrom(surnames),
+            age:randomFrom(ages),
+            citi:randomFrom(cities),
+            gender:randomFrom(genders),
+            favoriteFood:randomFrom(favoriteFoods),
     }
+        users.push(user) 
+    }
+    return users
 }
-generateUsers(3)
+console.log(generateUsers(100));
 // const users = generateUsers(3);
 // console.log(users);
 /*
