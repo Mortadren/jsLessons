@@ -73,7 +73,7 @@
 
 const massive = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 let x = massive.map((number) => number * 10);
-console.log(x);
+// console.log(x);
 
 // Напишите функцию analyzeArray, которая принимает массив чисел и возвращает объект с информацией о массиве. В объекте должны быть следующие поля:
 
@@ -126,10 +126,10 @@ const analyzeArray = (array) => {
 //     }
 // }
 
-console.log(analyzeArray(array));
-console.log(analyzeArray(array2));
-console.log(analyzeArray(array3));
-console.log(analyzeArray(array4));
+// console.log(analyzeArray(array));
+// console.log(analyzeArray(array2));
+// console.log(analyzeArray(array3));
+// console.log(analyzeArray(array4));
 
 // console.log(typeof "12" === "string")
 
