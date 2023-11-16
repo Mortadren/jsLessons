@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Добро пожаловать на мой сервер Express!');
 });
 //zadacha 2
-app.get('/profile/:username', (req, res) => {
+app.get('/profile', (req, res) => {
   const username = req.query.username;
   res.send(`Профиль пользователя: ${username}`);
 });
@@ -31,6 +31,6 @@ app.post('/login', (req, res) => {
 
 //zadacha 4
 app.delete('/users/:id', (req, res) => {
-  const id = req.query.id;
+  const id = req.params.id;
   res.send(`Профиль ${id} удален`);
 });
