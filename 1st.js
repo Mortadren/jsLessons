@@ -158,4 +158,3 @@ const get = (url) => {
 
 get('/users').then((id) => get('/posts').then((result) => console.log(result)));
 
-console.log('hello world')
